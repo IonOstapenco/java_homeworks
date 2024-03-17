@@ -10,10 +10,9 @@ public class Ex1 {
 
     }
 
-    private static void toUP(String st1, String st2) {
-        //System.out.println(st1.toUpperCase());
-        //System.out.println(st1.concat(st2));
-        String st3= st1.concat(st2).toUpperCase();
+    private static String toUP(String st1, String st2) {
+        String st3 = st1.toUpperCase()+st2.toUpperCase();
         System.out.println(st3);
+        return st3;
     }
 }
