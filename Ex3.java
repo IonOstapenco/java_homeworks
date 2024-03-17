@@ -9,9 +9,9 @@ public class Ex3 {
         reverse(name);
     }
 
-     private static String reverse(String name) {
+      private static String reverse(String name) {
         for (int i = name.length() - 1; i >= 0; i--) {
-            System.out.print(name.charAt(i));
+            name.charAt(i);
         }
         return name;
     }
