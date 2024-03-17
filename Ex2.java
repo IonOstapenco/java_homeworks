@@ -8,7 +8,7 @@ public class Ex2 {
         removevowels(st1);
     }
 
-    private static void removevowels(StringBuilder st1) {
+  private static StringBuilder removevowels(StringBuilder st1) {
                 for (int i = 0; i < st1.length(); i++) {
             if (st1.charAt(i) == 'A' || st1.charAt(i) == 'a' ||
                     st1.charAt(i) == 'E' || st1.charAt(i) == 'e' ||
@@ -19,5 +19,6 @@ public class Ex2 {
                 System.out.print(st1.charAt(i));
             }
         }
+        return st1;
     }
 }
