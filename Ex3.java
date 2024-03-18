@@ -5,14 +5,24 @@ package hw.string_excertitions;
  */
 public class Ex3 {
     public static void main(String[] args) {
-        String name = "Ion";
+        String name = new String("hello");
         reverse(name);
+
+        System.out.println(reverse(name));
     }
 
-      private static String reverse(String name) {
+    private static String reverse(String name) {
+        char[] bukvy = new char[name.length()];
+        int bukvyIndex = 0;
+
         for (int i = name.length() - 1; i >= 0; i--) {
-            name.charAt(i);
+            bukvy[bukvyIndex] = name.charAt(i);
+            bukvyIndex++;
         }
-        return name;
+        String reverse = "";
+        for (int i = 0; i < name.length(); i++) {
+            reverse = reverse + bukvy[i];
+        }
+        return reverse;
     }
 }
